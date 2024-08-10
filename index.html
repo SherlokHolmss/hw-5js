@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="form-container">
+        <form>
+            <label for="drinkSelect">Виберіть напій:</label>
+            <select id="drinkSelect" onchange="displayDrinkMessage()">
+                <option value="coffee">Кава</option>
+                <option value="tea">Чай</option>
+                <option value="juice">Сік</option>
+            </select>
+        </form>
+        <div id="drinkMessage"></div>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <label for="dayInput">Введіть день тижня:</label>
+            <input type="text" id="dayInput">
+            <button type="button" onclick="checkDayOfWeek()">Перевірити</button>
+        </form>
+        <div id="dayMessage"></div>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <label for="monthInput">Введіть номер місяця:</label>
+            <input type="number" id="monthInput">
+            <button type="button" onclick="displaySeason()">Дізнатись пору року</button>
+        </form>
+        <div id="seasonMessage"></div>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <label for="daysInMonthInput">Введіть номер місяця:</label>
+            <input type="number" id="daysInMonthInput">
+            <button type="button" onclick="displayDaysInMonth()">Дізнатись кількість днів</button>
+        </form>
+        <div id="daysInMonthMessage"></div>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <label for="colorInput">Введіть назву кольору:</label>
+            <input type="text" id="colorInput">
+            <button type="button" onclick="displayColorAction()">Дізнатись дію</button>
+        </form>
+        <div id="colorMessage"></div>
+    </div>
+
+    <div class="form-container">
+        <form>
+            <label for="num1">Число 1:</label>
+            <input type="number" id="num1">
+            <label for="num2">Число 2:</label>
+            <input type="number" id="num2">
+            <label for="operationSelect">Операція:</label>
+            <select id="operationSelect">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+            <button type="button" onclick="calculate()">Обчислити</button>
+        </form>
+        <div id="calcMessage"></div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
